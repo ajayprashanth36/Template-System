@@ -1,0 +1,14 @@
+﻿.validation-error {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: #e73d4a;
+    font-size: smaller;
+    display: none;
+}
+
+.validation-error::before {
+    font-family: FontAwesome;
+    content: "\f071";
+    margin-right: 3px;
+}

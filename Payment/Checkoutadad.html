@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from aspnetzero.com/Payment/Checkout?LicenseType=Ultimate by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2019 18:08:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ASP.NET Zero is a base solution to create new web applications with a modern UI and solid architecture. It saves your time by providing pre-built and working pages and a strong infrastructure.">
+<meta name="keywords" content="asp.net mvc, angular, starter kit, web template, application framework, membership management, admin panel, multitenant, asp.net core">
+<meta name="author" content="Volosoft Computer and Technology">
+<meta name="Revisit-After" content="7 Days" />
+<meta itemprop="name" content="ASP.NET Zero Web Site" />
+<meta itemprop="image" content="../Error/E4042e56.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.facebook.com/aspnetzero" />
+<meta property="og:site_name" content="AspNet Zero" />
+<meta property="og:phone_number" content="444-999-0">
+<meta property='og:title' content='AspNet Zero | a base solution to create new web applications' />
+<meta property='og:description' content='ASP.NET Zero is a base solution to create new web applications with a modern UI and solid architecture. It saves your time by providing pre-built and working pages and a strong infrastructure.' />
+<meta property='og:keywords' content='asp.net mvc, angular, starter kit, web template, application framework, membership management, admin panel, multitenant, asp.net core' />
+<meta property="og:image" content="../Error/E4042e56.html" />
+<meta name="DC.title" content="AspNet Zero - a base solution to create new web applications" />
+
+    
+<link rel="icon" href="../favicon.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon.ico/apple-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.ico/favicon-16x16.png">
+<link rel="mask-icon" href="../assets/favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="../libs/bootstrap4/bootstrap.min.css">
+<link href="../scss/zero.css" rel="stylesheet">
+<link href="../js/prism/prism.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css">
+<link href="../assets/owlcarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="../assets/owlcarousel/dist/assets/owl.theme.default.css" rel="stylesheet">
+<link href="../libs/modal-video/css/modal-video.min.css" rel="stylesheet" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>ASP.NET Zero | Checkout</title>
+<script type="text/javascript">
+    var abp = abp || {};
+    abp.appPath = '../index.html';
+</script>
+    
+    <link rel="stylesheet" type="text/css" href="../Views/Payment/Checkoutbc33.css?v=636879768093047862" />
+
+</head>
+
+<body class="vs-zero">
+    <header class="header-desktop">
+    <a class="zero-logo" href="../index.html">
+        <img src="../assets/zero-logo-2.svg" class="scroll-logo">
+        <img src="../assets/zero-icon-2.svg" class="scrolled-logo">
+    </a>
+    <div class="demo-button">
+
+
+            <a href="#" class="btn-sm btn btn-success" data-toggle="modal" data-target="#CreateDemoModal" id="CreateDemoLink">
+                <i class="fa fa-eye"></i> <span class="hide-md">Live</span> Demo
+            </a>
+
+        <div class="d-inline-block dropdown">
+                <a href="../Account/Login.html" class="btn-sm btn btn-primary mw-auto position-relative nav-link">
+                    <i class="fa fa-sign-in"></i> Login
+                </a>
+        </div>
+
+    </div>
+    <div class="container-fluid navbar-zero">
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://support.aspnetzero.com/" target="_blank">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Partnership.html">Partnership</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Learn</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://docs.aspnetzero.com/documents/zero/latest/" target="_blank">Documentation</a>
+                            <a class="dropdown-item" href="https://docs.aspnetzero.com/documents/zero/latest/Change-Logs" target="_blank">Change Log</a>
+                            <a class="dropdown-item" href="../Faq.html">F.A.Q.</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item btn btn-primary btn-sm mt-3" href="javascript:smartsupp.api.chat.open();">Ask a Question</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<header class="header-mobile">
+    <nav class="navbar">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/zero_logo_2.png" class="scroll-logo"></a>
+        <span>
+                <a href="../Account/Login.html" class="logout-user"><i class="fa fa-user text-light"></i></a>
+
+            <button class="navbar-toggler c-pointer"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent20"
+                    aria-controls="navbarSupportedContent20"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Features.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://support.aspnetzero.com/" target="_blank">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Partnership.html">Partnership</a></li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item"><a class="nav-link" href="https://docs.aspnetzero.com/documents/zero/latest/">Documentation</a> </li>
+                <li class="nav-item"><a class="nav-link" href="https://docs.aspnetzero.com/documents/zero/latest/Change-Logs" target="_blank">Change Log</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Faq.html">F.A.Q.</a></li>
+                <li class="nav-item"><a class="nav-link " href="javascript:smartsupp.api.chat.open();">Ask a Question</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+</header>
+
+
+    <!--<CONTENT>-->
+    
+
+
+<div class="container py-3" data-container="checkout">
+    <h1 class="w-100 text-center">Purchase</h1>
+    <p class="lead px-50 text-center pb-3">
+        Just one step to get ASP.NET <span class="zero-text">ZERO</span>. You will not regret.
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <div class="white-box">
+                <div class="needs-validation position-relative">
+
+                    <div class="d-block mb-4">
+                        <div class="custom-control custom-radio payment-method payment-method-1 selected-method mb-2">
+                            <input id="payu" name="paymentMethod" value="payu" type="radio" class="custom-control-input" checked required="">
+                            <label for="payu" class="custom-control-label">Pay with PAYU <small class="text-muted">(Recommended)</small></label>
+                        </div>
+                        <div class="custom-control custom-radio payment-method payment-method-2">
+                            <input id="avangate" name="paymentMethod" value="2checkout" type="radio" class="custom-control-input"  required="">
+                            <label for="avangate" class="custom-control-label">Pay with 2Checkout</label>
+                        </div>
+                        <hr class="hr-custom">
+                    </div>
+                    <div class="payment-form-wrapper">
+                        <div class="payment-form payment-form-1 selected-form" data-gateway="payu">
+                            <h5>You will pay with PAYU</h5>
+
+                            <div class="payment-info-boxes">
+                                <p class="mt-1 mb-0 text-muted">
+                                    <i class="fa fa-info-circle"></i>
+                                    <small>PAYU accepts Visa, MasterCard and AMEX</small>
+                                </p>
+                                <p class="mt-0 mb-0 text-muted">
+                                    <i class="fa fa-info-circle"></i>
+                                    <small>You will be directed to PAYU official website for payment.</small>
+                                </p>
+                            </div>
+
+                            <hr class="hr-custom">
+
+                            <form role="form"
+                                  name="payu-form"
+                                  method="post"
+                                  action="https://secure.payu.com.tr/order/lu.php">
+
+                                <div class="initial position-relative no-value mb-3">
+                                    <div class="d-block">
+                                        <div class="custom-control custom-radio d-inline-block">
+                                            <input id="creditCardType-others" name="creditCardType" type="radio" class="custom-control-input" required="" value="VISA-MASTER" checked>
+                                            <label for="creditCardType-others" class="custom-control-label">Visa/Master</label>
+                                        </div>
+                                        <div class="custom-control custom-radio d-inline-block ml-3">
+                                            <input id="creditCardType-amex" name="creditCardType" type="radio" class="custom-control-input" required="" value="AMEX" >
+                                            <label for="creditCardType-amex" class="custom-control-label">AMEX</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3 mb-md-1">
+                                        <div class="initial position-relative no-value">
+                                            <label for="payu-first-name" class="float-label">First Name</label>
+                                            <input type="text" name="BILL_FNAME" id="payu-first-name" placeholder="First Name" class="float-input" />
+                                            <div class="validation-error" id="validation-error-payu-first-name">Enter your first name!</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 pl-md-1">
+                                        <div class="initial position-relative no-value">
+                                            <label for="payu-last-name" class="float-label">Last Name</label>
+                                            <input type="text" name="BILL_LNAME" id="payu-last-name" placeholder="Last Name" class="float-input" />
+                                            <div class="validation-error" id="validation-error-payu-last-name">Enter your last name!</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="initial position-relative no-value">
+                                            <label for="payu-email-address" class="float-label">E-mail Address</label>
+                                            <input type="text" name="BILL_EMAIL" id="payu-email-address" placeholder="E-mail Address" class="float-input" />
+                                            <div class="validation-error" id="validation-error-payu-email-address">Enter a valid e-mail address!</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <input type="hidden" name="LANGUAGE" value="EN">
+                                    <input type="hidden" name="ORDER_HASH" value="0b75fd8be4ebd9100422772c07b05c03">
+                                    <input type="hidden" name="MERCHANT" value="ASPNETZE">
+                                    <input type="hidden" name="ORDER_REF" value="190717060351">
+                                    <input type="hidden" name="ORDER_DATE" value="{2019-03-17 18:07:51}">
+                                    <input type="hidden" name="ORDER_PNAME[0]" value="AspNet Zero Ultimate License ">
+                                    <input type="hidden" name="ORDER_PCODE[0]" value="Zero_Ultimate">
+                                    <input type="hidden" name="ORDER_PINFO[0]" value="">
+                                    <input type="hidden" name="ORDER_PRICE[0]" value="4499.00">
+                                    <input type="hidden" name="ORDER_QTY[0]" value="1">
+                                    <input type="hidden" name="ORDER_VAT[0]" value="0">
+                                    <input type="hidden" name="ORDER_SHIPPING" value="0">
+                                    <input type="hidden" name="PRICES_CURRENCY" value="USD">
+                                    <input type="hidden" name="DESTINATION_CITY" value="">
+                                    <input type="hidden" name="DESTINATION_STATE" value="">
+                                    <input type="hidden" name="DESTINATION_COUNTRY" value="">
+                                    <input type="hidden" name="PAY_METHOD" value="CCVISAMC">
+                                    <input type="hidden" name="ORDER_PRICE_TYPE[0]" value="GROSS">
+                                    <input type="hidden" name="INSTALLMENT_OPTIONS" value="1">
+                                <input type="hidden" name="BACK_REF" value="Succeed1c7a.html?paymentRequestId=f7160b56-3701-401f-9e8f-a79f2d59bf1d&amp;gateway=payu" />
+                                <input type="hidden" name="TESTORDER" value="0">
+                                <input type="hidden" name="DEBUG" value="1">
+                            </form>
+                        </div>
+
+                            <div class="payment-form payment-form-2 " data-gateway="avangate">
+
+                                <h5>You will pay with 2Checkout</h5>
+
+                                <div class="payment-info-boxes">
+                                    <p class="mt-1 mb-0 text-danger">
+                                        <i class="fa fa-exclamation-circle"></i>
+                                        <small class="text-with-read-more">
+                                            2Checkout might add VAT/TAX to the price
+                                            <span>
+                                                according to your country if you are not a registered company.
+                                                If you are a registered company, enter your VAT/TAX ID on 2Checkout checkout page to remove VAT/TAX.
+                                            </span>
+                                            <a href="#" class="read-more-link">
+                                                <span class="read-more-text">Read more</span>
+                                                <span class="read-less-text">See less</span>
+                                            </a>
+                                        </small>
+                                    </p>
+                                    <p class="mt-1 mb-0 text-muted">
+                                        <i class="fa fa-info-circle"></i>
+                                        <small>2Checkout accepts Visa, MasterCard, AMEX, Paypal, Discover, JCM and Dinners Club</small>
+                                    </p>
+                                    <p class="mt-0 mb-0 text-muted">
+                                        <i class="fa fa-info-circle"></i>
+                                        <small>You will be directed to 2Checkout official website for payment.</small>
+                                    </p>
+                                </div>
+
+                                <form role="form"
+                                      name="avangate-form"
+                                      method="get"
+                                      action="https://secure.2checkout.com/order/checkout.php?PRODS=4720432&amp;QTY=1&amp;BACK_REF=https://aspnetzero.com/Payment/Succeed?paymentRequestId=f7160b56-3701-401f-9e8f-a79f2d59bf1d%26gateway=avangate%26discountCode="></form>
+                            </div>
+
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="eula-check">
+                                    <label class="custom-control-label" for="eula-check">
+                                        I agree to <a href="../Licenses/Eula.html" target="_blank">Terms &amp; Conditions</a>
+                                    </label>
+                                    <div>
+                                        <small class="validation-error eula-check">Please check terms &amp; conditions!</small>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success btn-lg btn-block mt-4" name="checkout">Continue to Checkout <i class="fa fa-long-arrow-right arrow-slide"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="pricing-container">
+                <div class="pricing-wrapper">
+                    <div class="pricing-head">
+                        <h6>You've chosen</h6>
+
+                        <img src="../assets/svg/rocket.svg" class="price-icons mb-3" width="54">
+
+                        <p class="mb-0">ASP.NET <span class="zero-text">ZERO</span></p>
+
+                        <h3 class="mb-0">
+                            Ultimate
+                        </h3>
+
+                        <p class="mt-0">License</p>
+                        <hr class="hr-custom">
+                        <h6>You'll pay:</h6>
+                        <span class="pricing-price m-0 p-0"><small>$</small>4499</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--</CONTENT>-->
+
+    <div class="container text-center px-5">
+    <hr class="hr-custom my-5">
+    <h3 class="p-3 mt-2 text-center">
+        Don't start from scratch, start from
+        <span class="zero-text">ZERO</span>
+    </h3>
+    <div class="row justify-content-md-center">
+        <div class="col-sm-3 col-12">
+            <button class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#CreateDemoModal"><i class="fa fa-eye"></i> Live Demo</button>
+        </div>
+        <div class="col-sm-3 col-12 mt-md-20">
+            <a class="btn btn-lg btn-block btn-primary" href="../Pricing.html"> See Pricing</a>
+        </div>
+        <div class="col-sm-6 col-12 mt-md-20">
+            <div class="subscribe">
+                <form id="NewsLetterSubscribeForm" novalidate="novalidate">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter email for the newsletter..." name="EmailAddress">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-md btn-success" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="container p-5">
+        <div class="footer-line-1">
+            <a href="https://github.com/aspnetzero/" target="_blank">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <span class="az-seperator">|</span>
+            <a href="https://twitter.com/aspnetzero/" target="_blank">
+                <i class="fa fa-twitter"></i> Twitter
+            </a>
+            <span class="az-seperator">|</span>
+            <a href="mailto:info@aspnetzero.com">
+                <i class="fa fa-envelope"></i>
+                <span>info@aspnetzero.com</span>
+            </a>
+        </div>
+        <div class="footer-line-2">
+            <a href="../Privacy.html">Privacy policy</a>
+            <span class="az-seperator">|</span>
+            <a href="../Licenses/Eula.html">EULA</a>
+            <span class="az-seperator">|</span>
+            <a href="../Contact.html">Contact Us</a>
+        </div>
+        <div class="footer-line-3">
+            <span class="copytext"> &#xA9; ASP.NET ZERO 2014 - 2019 |</span>
+            <a href="https://volosoft.com/" target="_blank">Powered by Volosoft</a>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="CreateDemoModal" tabindex="-1" role="dialog" aria-labelledby="CreateDemoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="CreateDemoModalLabel">
+                    ASP.NET
+                    <span class="zero-text">ZERO</span> Demo
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="demo-form text-left">
+                    <form method="POST" name="CreateDemoForm" id="CreateDemoForm" action="https://aspnetzero.com/Demo/CreateDemo" role="form" autocomplete="off">
+    <div class="initial position-relative">
+        <label for="DemoName" class="float-label floating">Subdomain</label>
+        <div class="form-group position-relative">
+            <input type="text" 
+                   name="DemoName" 
+                   id="DemoName" 
+                   placeholder="Subdomain (optional)" 
+                   class="float-input" 
+                   maxlength="48" 
+                   pattern="[a-zA-Z][a-zA-Z0-9]{2,48}" 
+                   minlength="2"/>
+            <strong class="value-text-js">http://<span class="span-text-value">Subdomain</span>.demo.aspnetzero.com</strong>
+        </div>
+    </div>
+    <div class="payment-info-boxes">
+        <p class="mt-1 mb-0 text-muted">
+            <i class="fa fa-info-circle"></i>
+            <small>
+                The subdomain is optional. If you don't provide it, we'll generate a name for you. If you provide it, it must be at least 2 characters and must begin with a letter and continue with letters or numbers.
+            </small>
+        </p>
+    </div>
+    <div class="initial mt-4">
+        <label for="EmailAddress" class="float-label floating">E-mail Address</label>
+        <input type="email" 
+               name="EmailAddress"
+               id="EmailAddress" 
+               placeholder="E-mail Address (optional)" 
+               class="float-input" 
+               maxlength="255" />
+    </div>
+    <div class="payment-info-boxes">
+        <p class="mt-1 mb-0 text-muted">
+            <i class="fa fa-info-circle"></i>
+            <small>
+                If you want to test e-mailing functionalities like forgot password and email activation, enter your e-mail address. Default e-mail address is demo@aspnetzero.com.
+            </small>
+        </p>
+    </div>
+
+    <div class="text-right mt-4">
+        <span class="watch-quick-demo">
+            <a href="#" class="js-modal-btn btn-sm btn btn-outline-success" data-video-id="CM-5bNf1G4k" title="Open video in popup window.">
+                <i class="fa fa-youtube-play"></i>  Watch demo
+            </a>
+        </span>
+
+        <button class="btn btn-primary btn-lg">
+            <span>
+                Create My Demo
+                <i class="fa fa-long-arrow-right arrow-slide"></i>
+            </span>
+        </button>
+    </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../Bundles/Layout/jsea90?v=JMjiDqrl8UZ4AxzJQgqin-0W3RRMmDCxrkAG5sdI6gM1"></script>
+
+
+
+    <script src="../AbpScripts/GetScripts2534.js?v=636884536719036253" type="text/javascript"></script>
+
+    
+    <script src="../Views/Payment/Checkout47b0.js?v=636879768093057873" type="text/javascript"></script>
+
+
+        <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-49982725-2', 'auto');
+        ga('send', 'pageview');
+
+        //Tracking for Quic Demo Video Link
+        $(document).ready(function () {
+            $(".js-modal-btn").click(function (e) {
+                ga('send', 'event', 'Video', 'Play', 'Quick Demo');
+            });
+        });
+    </script>
+
+
+    <div class="scrollDown bounce">
+    <span>
+        <a href="#">
+            <img src="../assets/sdown.png">
+        </a>
+    </span>
+</div>
+<div id="stop" class="scrollTop">
+    <span>
+        <a href="#">
+            <img src="../assets/scrolltop.png">
+        </a>
+    </span>
+</div>
+
+    <script>
+        jQuery(document).ready(function () {
+            if (typeof Metronic !== 'undefined') {
+                //legacy support
+                Metronic.init();
+            }
+
+            if (typeof Layout !== 'undefined') {
+                Layout.init();
+            }
+
+            if (typeof CurrentPage !== 'undefined') {
+                CurrentPage && CurrentPage.init();
+            }
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from aspnetzero.com/Payment/Checkout?LicenseType=Ultimate by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2019 18:08:07 GMT -->
+</html>
